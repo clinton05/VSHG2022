@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
+    <Metadata>
+        <Identity Id="VSHG.84a06d4f-da93-4015-a822-6b3d1b6d2756" Version="1.2.0.3" Language="en-US" Publisher="Clinton"/>
+        <DisplayName>VSHG</DisplayName>
+        <Description xml:space="preserve">Visual Studio 2022 source control integration for Mercurial</Description>
+        <MoreInfo>https://github.com/d-popov/VSHGhttps://github.com/d-popov/VSHG</MoreInfo>
+        <License>License.txt</License>
+        <GettingStartedGuide></GettingStartedGuide>
+        <Icon>Resources\Logo.ico</Icon>
+        <PreviewImage>Resources\Logo.ico</PreviewImage>
+    </Metadata>
+    <Installation>
+        <InstallationTarget Version="[16.0,18.0)" Id="Microsoft.VisualStudio.Community">
+            <ProductArchitecture>x86</ProductArchitecture>
+        </InstallationTarget>
+        <InstallationTarget Version="[16.0,18.0)" Id="Microsoft.VisualStudio.Community">
+            <ProductArchitecture>amd64</ProductArchitecture>
+        </InstallationTarget>
+    </Installation>
+    <Dependencies>
+        <Dependency d:Source="Manual" DisplayName="Visual Studio MPF" Id="Microsoft.VisualStudio.MPF" Version="[10.0,)" />
+    </Dependencies>
+    <!--<Assets>
+    <Asset Type="Microsoft.VisualStudio.Assembly" d:Source="Project" d:ProjectName="%CurrentProject%" Path="|%CurrentProject%|" AssemblyName="|%CurrentProject%;AssemblyName|" />
+    <Asset Type="Microsoft.VisualStudio.ProjectTemplate" d:Source="Project" d:ProjectName="Framework.WebPart" d:TargetPath="|Framework.WebPart;TemplateProjectOutputGroup|" Path="ProjectTemplates" d:VsixSubPath="ProjectTemplates" />
+    <Asset Type="Microsoft.VisualStudio.ItemTemplate" d:Source="Project" d:ProjectName="Framework.WebPart.Item" d:TargetPath="|Framework.WebPart.Item;TemplateProjectOutputGroup|" Path="ItemTemplates" d:VsixSubPath="ItemTemplates" />
+  </Assets>-->
+    <Prerequisites>
+        <Prerequisite Id="Microsoft.VisualStudio.Component.CoreEditor" Version="[17.0.31804.368,18.0)" DisplayName="Visual Studio core editor" />
+    </Prerequisites>
+</PackageManifest>
+
+<!--<Vsix xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Version="1.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011">
+  <Identifier Id="84a06d4f-da93-4015-a822-6b3d1b6d2756">
+    <Name>VSHG</Name>
+    <Author>Bernd Schrader, Dobromir Popov</Author>
+    <Version>1.2.0</Version>
+    <Description xml:space="preserve">Mercurial source control integration</Description>
+    <Locale>1033</Locale>
+    <MoreInfoUrl>http://VSHG.codeplex.com/</MoreInfoUrl>
+    <License>License.txt</License>
+    <Icon>Resources\Product.ico</Icon>
+    <InstalledByMsi>false</InstalledByMsi>
+    <SupportedProducts>
+      <VisualStudio Version="10.0">
+        <Edition>Pro</Edition>
+      </VisualStudio>
+      <VisualStudio Version="11.0">
+        <Edition>Pro</Edition>
+      </VisualStudio>
+      <VisualStudio Version="12.0">
+        <Edition>Pro</Edition>
+      </VisualStudio>
+      <VisualStudio Version="14.0">
+        <Edition>Pro</Edition>
+      </VisualStudio>
+      <VisualStudio Version="15.0">
+        <Edition>Community</Edition>
+        <Edition>Pro</Edition>
+        <Edition>Enterprise</Edition>
+      </VisualStudio>
+      <VisualStudio Version="16.0">
+        <Edition>Community</Edition>
+        <Edition>Pro</Edition>
+        <Edition>Enterprise</Edition>
+      </VisualStudio>
+    </SupportedProducts>
+    <SupportedFrameworkRuntimeEdition MinVersion="4.0" MaxVersion="4.7.2" />
+  </Identifier>
+  <References>
+    <Reference Id="Microsoft.VisualStudio.MPF" MinVersion="10.0">
+      <Name>Visual Studio MPF</Name>
+    </Reference>
+  </References>
+  <Content>
+    <VsPackage>|%CurrentProject%;PkgdefProjectOutputGroup|</VsPackage>
+  </Content>
+</Vsix>-->
