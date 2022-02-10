@@ -1,5 +1,6 @@
 Mercurial Source Control Plugin for MS Visual Studio
-A fork of VisualHG, which *attempts* to work with Visual Studio 2022.
+A fork of VisualHG, which **attempts** to work with Visual Studio 2022.
+This is a work in progress
 
 Don't forget to set your source control provider to VSHG after installation (Tools->Options--->Source Control->Plug-in Selection)
 
